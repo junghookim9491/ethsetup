@@ -68,7 +68,7 @@ echo ".......geth init.........."
 geth --datadir ~/data_testnet/ init ~/data_testnet/genesis.json
 
 echo ".......setting up network.........."
-nohup geth --networkid "${NETWORKID}" --nodiscover --datadir /home/user01/data_testnet --rpc  --rpcaddr "0.0.0.0" --rpcport 8545  --rpccorsdomain "*" --rpcapi "admin,db,eth,miner,net,personal,web3" --verbosity 6  2>> /home/user01/data_testnet/geth.log &
+nohup geth --networkid "${NETWORKID}" --nodiscover --datadir ~/data_testnet --rpc  --rpcaddr "0.0.0.0" --rpcport 8545  --rpccorsdomain "*" --rpcapi "admin,db,eth,miner,net,personal,web3" --verbosity 6  2>> ~/data_testnet/geth.log &
 
 
 
